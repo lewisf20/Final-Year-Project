@@ -1,0 +1,163 @@
+*, *::before, *::after {
+    font-family: 'Arial';
+  }
+  
+  :root {
+    --backgroundColor: #ccc;
+    --buttonColor: skyblue;
+    --correctColor: green;
+    --wrongColor: red;
+  }
+  
+  body {
+    justify-content: center;
+    align-items: center;
+    background-color: var(--backgroundColor);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    
+  }
+  
+  body.correct {
+    background-color: var(--correctColor);
+  }
+  
+  body.wrong {
+    background-color: var(--wrongColor);
+  }
+  
+  .container {
+    width: 800px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 15px 5px;
+    max-width: 80%;
+    background-color: white;
+    
+  }
+
+  #questionCounter {
+      color: black;
+      padding: 10px;
+      font-size: 7vw;
+  }
+
+  #correctAnswers {
+    color: black;
+    padding: 10px;
+    font-size: 7vw;
+}
+  
+  .btnGrid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .btn {
+    border: 1px solid var(--buttonColor);
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: var(--buttonColor);
+    color: black;
+    outline: none;
+  }
+  
+  .btn:hover {
+    border-color: black;
+  }
+  
+  .btn.correct {
+    background-color: var(--correctColor);
+  }
+  
+  .btn.wrong {
+    background-color: var(--wrongColor);
+  }
+  
+  .beginBtn, .nextBtn {
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+ 
+  .hide {
+    display: none;
+  }
+
+  /* Header and nav styling */
+
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+  }
+  .main-nav ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav a {
+    background: var(--primary);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+.main-nav a:hover {
+    color: var(--light);
+    font-weight: bolder;
+    border-left: 10px solid var(--light);
+}
+
+.header-login {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+
+
+/* media queries*/
+
+@media(max-width: 700px) {
+  .top-section {
+      grid-template-areas: 
+      'showcase showcase'
+      'top-box-a top-box-b';
+  }
+  .showcase h1 {
+      font-size: 2.5rem;
+  }
+
+  .main-nav ul {
+      grid-template-columns: 1fr;
+  }
+
+  .info {
+      grid-template-columns: 1fr;
+  }
+
+}

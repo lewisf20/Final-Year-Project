@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*background*/
+html {
+    background-image: url('images/polygonBackground.svg');
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+li, a, button {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.mainHead { 
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-bottom: 2rem;
+    align-items: center;
+    padding: 15px 5px;
+}
+
+.main-nav ul {
+    list-style: none;
+}
+
+.main-nav ul li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.main-nav ul li a{
+    transition: all 0.2s ease 0s;
+}
+
+.main-nav ul li a:hover{
+    color: #0088a9;
+}
+
+.header-btn, .button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+}
+
+.header-btn:hover {
+    background-color: rgba(0, 136, 169, 0.75);
+}
+
+.login-form {
+    display: flex;
+}
+
+#user { 
+    font-weight: bolder;
+    padding: 5px;
+}
+
+input {
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding: 6px;
+    margin: 5px;
+}
+
+input:focus {
+    background-color: lightblue;
+}
+
+.logo {
+    width: 5%;
+    height: 10%;
+    cursor: pointer;
+}
+
+/* footer */
+#contact {
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+    padding: 2rem;
+    background-color: #fff;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+
+/* media queries*/
+
+@media(max-width: 800px) {
+    header { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 10%;
+    }
+    .logo {
+        width: 25%;
+        height: 15%;
+        cursor: pointer;
+    }
+    .header-btn {
+        padding: 9px 25px;
+        position: relative;
+        left: 15%;
+        display: block;
+        background-color: rgba(0, 136, 169, 1);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.2s ease 0s;
+    }
+    .main-nav ul li{
+        display: flex;
+        justify-content: center;
+        padding: 0px 20px;
+    }
+    .login-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .input {
+        display: block;
+    }
+    #contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+        color: var(--dark);
+        text-align: center;
+        padding: 1rem;
+    }
+    .copyright {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+     
+
+}

@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li, a, button {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    margin: 5px;
+    text-decoration: none;
+}
+
+header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.main-nav ul {
+    list-style: none;
+}
+
+.main-nav ul li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.main-nav ul li a{
+    transition: all 0.2s ease 0s;
+}
+
+.main-nav ul li a:hover{
+    color: #0088a9;
+}
+
+.header-btn {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+}
+
+.header-btn:hover {
+    background-color: rgba(0, 136, 169, 0.75);
+}
+
+.login-form {
+    display: flex;
+}
+
+input {
+    border: 1px solid grey;
+    padding: 4px;
+    margin: 5px;
+}
+
+input:focus {
+    background-color: lightblue;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+/* footer */
+footer {
+    margin-top: 2rem;
+    background: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 1rem;
+}
+
+/* media queries*/
+
+@media(max-width: 800px) {
+    header { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 10%;
+    }
+    .logo {
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+    }
+    .header-btn {
+        padding: 9px 25px;
+        display: block;
+        position: relative;
+        left: 20%;
+        background-color: rgba(0, 136, 169, 1);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.2s ease 0s;
+    }
+    .main-nav ul li{
+        display: flex;
+        justify-content: center;
+        padding: 0px 20px;
+    }
+    .login-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .input {
+        display: block;
+    }
+
+     
+
+}

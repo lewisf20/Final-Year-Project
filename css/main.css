@@ -1,0 +1,186 @@
+/* CSS variables*/
+:root {
+    --primary: #fff;
+    --dark: #111;
+    --light: #54F3BE;
+    --shadow: 0 2px 8px rgba(104, 104, 104, 0.8);
+    --btnColor: rgba(0, 136, 169, 1);
+}
+/* --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    
+    --primary: #54F3BE;
+    --dark: #18AF52;
+    --light: #54F3BE;*/
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+
+body {
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+
+
+img {
+    max-width: 100%;
+
+}
+
+.container {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.contentP {
+    padding-bottom: 10px;
+}
+
+
+/* top section */
+.top-section {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    'showcase showcase top-box-a'
+    'showcase showcase top-box-b';
+}
+
+.showcase {
+    grid-area: showcase;
+    min-height: 400px;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+
+.showcase h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+    color: var(--dark);
+}
+
+.showcase p {
+    font-size: 1.3rem;
+    margin-top: 0;
+    color: var(--dark);
+}
+
+.top-box {
+    display: grid;
+    align-items: center;;
+    justify-content: center;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.top-box-a {
+    grid-area: top-box-a;
+}
+
+.top-box-b {
+    grid-area: top-box-b;
+}
+
+/* info section*/
+
+.info {
+    background: var(--primary);
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* dressing images */
+
+.dressing {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.dressing img {
+    width: 100%;
+    box-shadow: var(--shadow);
+}
+
+/* ################################################# */
+/* sign in/up css */
+
+.sign-in-up {
+    background: var(--primary);
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-gap: 30px;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 2rem;
+    justify-content: center;
+}
+
+.sign-in-up form {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+}
+
+.sign-in-up button:hover, #signup-link button:hover, .btn-style:hover {
+    box-shadow: var(--shadow);
+}
+
+/*LEARN HTML PAGE*
+/*#################################################
+#################################################*/
+
+.summary-chapters {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+ 
+
+/* media queries*/
+
+@media(max-width: 800px) {
+    .top-section {
+        grid-template-areas: 
+        'showcase showcase'
+        'top-box-a top-box-b';
+    }
+    .showcase h1 {
+        font-size: 2.5rem;
+    }
+
+    .main-nav ul {
+        grid-template-columns: 1fr;
+    }
+
+    .info {
+        grid-template-columns: 1fr;
+    }
+
+}
