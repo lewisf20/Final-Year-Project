@@ -9,7 +9,7 @@ require "header.php";
             <p class="contentP">Welcome, this has been created for a final year project at <strong>Manchester 
                 Metropolitan University</strong> where I currently study Computer Science.</p>
 
-            <!--<i class="fas fa-address-card fa-4x"></i>-->
+            
             <h2>About me</h2>
             <p class="contentP">My name is Lewis Frater, I am 24 years old. I love learning and helping others to 
                 learn. This is the main motivation for undertaking this project. I want this webisite to assist people learning HTML

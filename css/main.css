@@ -54,13 +54,14 @@ img {
     grid-template-areas: 
     'showcase showcase top-box-a'
     'showcase showcase top-box-b';
+    
 }
 
 .showcase {
     grid-area: showcase;
     min-height: 400px;
     display: flex;
-    
+    background-color: #fff;
     flex-direction: column;
     align-items: start;
     justify-content: center;
@@ -83,7 +84,8 @@ img {
 
 .top-box {
     display: grid;
-    align-items: center;;
+    align-items: center;
+    background-color: #fff;
     justify-content: center;
     box-shadow: var(--shadow);
     padding: 1.5rem;
