@@ -5,6 +5,7 @@ require "header.php";
 <!-- Stylesheet unqiuely for this page -->
 <head>
     <link rel="stylesheet" href="css/playground.css">
+    <script src="js/general.js"></script>
 </head>
 
 <section>
@@ -14,7 +15,9 @@ require "header.php";
             $user = $_SESSION['username'];
             echo '<h2 id="pgHeader">'.$user.', Welcome to the Playground!</h2>';
         ?>
-        <p>Play with HMTL code to your hearts content and see the result!</p>
+        <p>Here you can experiment with HTML code and see the result! Hands on learning!</p>
+        <h3 id="smallerScreen"></h3>
+        <p id="instruction"></p>
 
     </header>
     

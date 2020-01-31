@@ -1,6 +1,7 @@
 #welcomeHeader {
     background-color: #fff;
-    padding: 5px;
+    border-bottom: solid 8px aquamarine;
+    padding: 10px;
     margin-bottom: 10px;
     text-align: center;
 }
