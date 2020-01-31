@@ -23,6 +23,14 @@ session_start();
             <ul>
                 <li><a href="Home.php">Home</a></li>
                 <li><a href="Learn.php">Learn</a></li>
+
+                <!-- Only show playground when user is logged in -->
+                <?php
+                 if (isset($_SESSION['userid'])) {
+                    echo '<li><a href="Playground.php">Playground</a></li>';
+                 }
+                ?>
+
                 <li><a href="About.php">About</a></li>
             </ul>
             
