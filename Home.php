@@ -19,16 +19,17 @@ require "header.php";
         <div class="top-box top-box-a">
             
             <h4 class="contentP">Get access to special features!</h4>
-            <p class="contentP">Sign up now to benefit! Its totally <strong>FREE</strong></p>
-            <i class="fab fa-leanpub fa-4x"></i>
+            <p class="contentP">Create an account to benefit!</p>
+            <p class="contentP">It's totally <strong>FREE</strong></p>
+
             <a href="signup.php" id="signup-link"><button class="button">Sign up</button></a>
         </div>
         <div class="top-box top-box-b">
             
-            <h4>Special features</h4>
-            <i class="fas fa-check-square fa-4x"></i>
-            <p class="contentP">Test your understanding with a good old quiz!</p>
-            <p class="contentP">Solidify your understanding in memory!</p>
+            <h4 class="contentP">Special features</h4>
+           <!-- <i class="fab fa-leanpub fa-4x"></i>-->
+            <p class="contentP">Use a quiz to test your progress</p>
+            <p class="contentP">Use the playground for a free instant coding environment</p>
 
 
         </div>
@@ -42,7 +43,7 @@ require "header.php";
             <h2>The purpose of this website</h2>
             <p class="contentP">This website is a free to access resource which helps people learn HTML 
                 (HyperText Markup Language). The goal is to make it easy as possible for people new to 
-                HTML to become web developers. So if you haven't writtien a line of HTML in your life,
+                HTML to become web developers. So if you haven't written a line of HTML in your life,
                  not to worry, follow the learning guide and Bob's your uncle!</p>
 
         </div>
