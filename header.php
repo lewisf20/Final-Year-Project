@@ -44,7 +44,7 @@ session_start();
                 if (isset($_SESSION['userid'])) {
                     $user = $_SESSION['username'];
                     echo '<div class="login-form"><form action="php-actions/logout.pActions.php">
-                    <h4 id="user">Welcome, '.$user.'</h4>
+                    <p id="user">Welcome, '.$user.'</p>
                      <button class="header-btn" type="submit" name="logout-submit">Logout</button>
                     </form></div>';
                 } else {

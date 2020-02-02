@@ -3,6 +3,8 @@
     --primary: #fff;
     --dark: #111;
     --light: #54F3BE;
+    --bg: #e9e9e9cb;
+    --header: royalblue;
     --shadow: 0 2px 8px rgba(104, 104, 104, 0.8);
     --btnColor: rgba(0, 136, 169, 1);
 }
@@ -43,8 +45,7 @@ img {
 }
 
 .contentP {
-    padding: 10px;
-    font-size: 1.2em;
+    margin-bottom: 1rem;
 }
 
 
@@ -63,7 +64,8 @@ img {
     grid-area: showcase;
     min-height: 400px;
     display: flex;
-    background-color: #fff;
+    background-color: #e9e9e9cb;
+    border-radius: 2.2rem;
     flex-direction: column;
     align-items: start;
     justify-content: center;
@@ -75,7 +77,21 @@ img {
 .showcase h1 {
     font-size: 4rem;
     margin-bottom: 0;
-    color: var(--dark);
+    color: var(--header);
+}
+
+h2, h4 {
+    color: var(--header);
+    border-bottom: 2px solid royalblue;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 1.9rem;
+}
+
+h4 {
+    font-size: 1.8rem;
 }
 
 .showcase p {
@@ -87,7 +103,8 @@ img {
 .top-box {
     display: grid;
     align-items: center;
-    background-color: #fff;
+    background-color: #e9e9e9cb;
+    border-radius: 2.2rem;
     justify-content: center;
     box-shadow: var(--shadow);
     padding: 1.5rem;
@@ -105,8 +122,9 @@ img {
 /* info section*/
 
 .info {
-    background: var(--primary);
+    background: var(--bg);
     box-shadow: var(--shadow);
+    border-radius: 2.2rem;
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(2, 1fr);
