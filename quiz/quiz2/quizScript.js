@@ -142,45 +142,48 @@ function clearStatusClass(element) {
 //array of questions to ask the user
 const questions = [
     {
-        question: 'What does HTML stand for?',
+        question: 'Which component usually holds the main links to other pages? ',
         answers: [
-            { text: 'HyperText Markup Linguistic', correct: false },
-            { text: 'Hyper Marking Language', correct: false },
-            { text: 'HyperText Marko Language', correct: false },
-            { text: 'HyperText Markup Language', correct: true },
+            { text: 'Main', correct: false },
+            { text: 'Navigation', correct: true },
+            { text: 'Footer', correct: false },
+            { text: 'Structure', correct: false },
         ]
     },
     {
-        question: 'What is a <p> tag',
+        question: 'Where is the unique content of a webpage usually?',
         answers: [
-            { text: 'paragraph tag', correct: true },
-            { text: 'paraframe tag', correct: false }
+            { text: 'Main', correct: true },
+            { text: 'Header', correct: false },
+            { text: 'Navigation', correct: false },
+            { text: 'Aside', correct: false }
         ]
     },
     {
-        question: 'Which heading displays the largest text',
+        question: 'What part of a webpage usually contains the copyright notices?',
         answers: [
-            { text: '<h4>', correct: false },
-            { text: '<h3>', correct: false },
-            { text: '<h6>', correct: false },
-            { text: '<h1>', correct: true },
+            { text: 'Structure', correct: false },
+            { text: 'Main', correct: false },
+            { text: 'Footer', correct: true },
+            { text: 'Header', correct: false },
         ]
     },
     {
-        question: 'The <head> element contains what?',
+        question: 'What kind of content does Main usually hold?',
         answers: [
-            { text: 'Title of the webpage', correct: false },
-            { text: 'Metadata', correct: false },
-            { text: 'Both', correct: true }
+            { text: 'Videos', correct: false },
+            { text: 'News Headlines', correct: false },
+            { text: 'Main story', correct: false },
+            { text: 'All', correct: true }
         ]
     },
     {
-        question: 'Which is the right way to close a <h1> tag',
+        question: 'Which component can be used for a secondary navigation?',
         answers: [
-            { text: '</h1>', correct: true },
-            { text: '<h1/>', correct: false },
-            { text: '</h1/>', correct: false },
-            { text: '<h1>', correct: false },
+            { text: 'Sidebar', correct: true },
+            { text: 'Navigation', correct: false },
+            { text: 'Header', correct: false },
+            { text: 'Main', correct: false },
         ]
     },
 
