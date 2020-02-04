@@ -35,6 +35,7 @@ require "header.php";
                 <!-- <i class="fab fa-leanpub fa-4x"></i>-->
                 <p class="contentP">Use a quiz to test your progress</p>
                 <p class="contentP">Use the playground for a free instant coding environment</p>
+                <a href="Playground.php"><button class="button">Playground</button></a>
 
 
             </div>

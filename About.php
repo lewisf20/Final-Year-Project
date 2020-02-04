@@ -38,8 +38,13 @@
                 </p>
 
                 <p class="contentP">
-                    <strong>(2st year grades): <br></strong> Advanced Programming (72%), Algorithms and data structures (83%),
+                    <strong>(2nd year grades): <br></strong> Advanced Programming (72%), Algorithms and data structures (83%),
                     Computer Networks and Operating Systems (93%) and Professional Development (70%).
+                </p>
+                <p class="contentP">
+                    <strong>Current units of study: <br></strong>
+                    Artificial intelligence, Mobile Application Development,
+                    Programming language – principles and design, final year project (Interactive web package to teach HTML).
                 </p>
 
                 <p class="contentP">
