@@ -44,14 +44,14 @@ session_start();
                 if (isset($_SESSION['userid'])) {
                     $user = $_SESSION['username'];
                     echo '<div class="login-form"><form action="php-actions/logout.pActions.php">
-                    <p id="user">Welcome, '.$user.'</p>
+                    <p id="user">'.$user.'</p>
                      <button class="header-btn" type="submit" name="logout-submit">Logout</button>
                     </form></div>';
                 } else {
                     echo '<div class="login-form"><form action="php-actions/login.pActions.php" method="post">
                     <input class="input" type="text" name="emailuser" placeholder="Email / Username">
                     <input class="input" type="password"  name="passw" placeholder="Password">
-                    <button class="header-btn" type="submit" name="login-submit">Login</button>
+                    <button class="login-btn" type="submit" name="login-submit">Login</button>
                     </form></div>';
                 }
                 ?>

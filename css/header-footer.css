@@ -47,7 +47,7 @@ li, a, button {
     color: #0088a9;
 }
 
-.header-btn, .button {
+.header-btn, .login-btn, .button {
     padding: 9px 25px;
     background-color: rgba(0, 136, 169, 1);
     border: none;
@@ -58,7 +58,7 @@ li, a, button {
 
 
 
-.header-btn:hover {
+.header-btn:hover, .login-btn:hover {
     background-color: rgba(0, 136, 169, 0.75);
 }
 
@@ -68,7 +68,10 @@ li, a, button {
 
 #user { 
     font-weight: bolder;
-    padding: 5px;
+    font-size: 1.2rem;
+    color: royalblue;
+    text-align: center;
+    cursor: pointer;
 }
 
 input {
@@ -124,16 +127,18 @@ input:focus {
         height: 15%;
         cursor: pointer;
     }
-    .header-btn {
+    .header-btn, .login-btn {
         padding: 9px 25px;
         position: relative;
-        left: 15%;
-        display: block;
+        display: flex;
         background-color: rgba(0, 136, 169, 1);
         border: none;
         border-radius: 50px;
         cursor: pointer;
         transition: all 0.2s ease 0s;
+    }
+    .login-btn {
+        left: 25%
     }
     .main-nav ul li{
         display: flex;

@@ -73,7 +73,7 @@
          </p>
 
          <p class="contentP">
-            A website could be structured like this:
+            A webpage could be structured like this:
          </p>
          <img src="images/structure.png" alt="" class="websiteEg">
 

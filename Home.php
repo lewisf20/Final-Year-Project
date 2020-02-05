@@ -22,12 +22,22 @@ require "header.php";
 
             </header>
             <div class="top-box top-box-a">
+            
+                <?php
+                if (isset($_SESSION['userid'])) {
+                    $user = $_SESSION['username'];
+                    echo '<h4 class="contentP">Welcome '.$user.'</h4>';
+                } else {
+                    echo '<h4 class="contentP">Get access to special features!</h4>
+                    <p class="contentP">Create an account to benefit!</p>
+                    <p class="contentP">It is totally <strong>FREE</strong></p>
+                    <a href="signup.php" id="signup-link"><button class="button">Sign up</button></a>';
+                }
+                ?>
 
-                <h4 class="contentP">Get access to special features!</h4>
-                <p class="contentP">Create an account to benefit!</p>
-                <p class="contentP">It's totally <strong>FREE</strong></p>
 
-                <a href="signup.php" id="signup-link"><button class="button">Sign up</button></a>
+
+                
             </div>
             <div class="top-box top-box-b">
 
