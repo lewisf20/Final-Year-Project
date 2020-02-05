@@ -44,6 +44,17 @@
       margin-top: 5px;
  }
 
+ .chapterEnd {
+     font-size: 1.4rem;
+     color: royalblue;
+ }
+
+ #quizLink button {
+     
+     width: 40%;
+     height: 3rem;
+ }
+
 /* Desktop styles*/
 @media(max-width: 800px) {
 

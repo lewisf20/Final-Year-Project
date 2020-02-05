@@ -35,7 +35,7 @@
    <?php
    if (isset($_SESSION['userid'])) {
       $user = $_SESSION['username'];
-      echo '<a href="quiz/quiz5/quiz.php"><button class="button">Take a Quiz!</button></a>';
+      echo '<a href="quiz/quiz5/quiz.php" id="quizLink"><button class="button">Take a Quiz!</button></a>';
    }
    ?>
 </body>

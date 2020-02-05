@@ -43,14 +43,15 @@
 
       <div>
          <h1>Potential video ????</h1>
-
+         <p class="chapterEnd">Next chapter we will look at the Structure of HTML pages</p>
+         <a href="Structure"><button class="button">Next</button></a>
       </div>
 
    </section>
    <?php
    if (isset($_SESSION['userid'])) {
       $user = $_SESSION['username'];
-      echo '<a href="quiz/quiz1/quiz.php"><button class="button">Take a Quiz!</button></a>';
+      echo '<a href="quiz/quiz1/quiz.php" id="quizLink"><button class="button">Take a Quiz!</button></a>';
    }
    ?>
 </body>

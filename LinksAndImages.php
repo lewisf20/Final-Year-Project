@@ -30,12 +30,13 @@
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam laboriosam praesentium fugiat laborum voluptate voluptas modi. Nesciunt nemo optio earum blanditiis! Harum quam dicta sunt explicabo natus autem, animi aliquid odio similique nulla saepe dolor officia iure exercitationem eaque quae alias, accusantium dolorem consequatur nostrum, excepturi incidunt blanditiis itaque? Labore.</p>
 
       </div>
-
+      <p class="chapterEnd">Next chapter we will go into detail about HTML Attributes</p>
+      <a href="Attributes"><button class="button">Next</button></a>
    </section>
    <?php
    if (isset($_SESSION['userid'])) {
       $user = $_SESSION['username'];
-      echo '<a href="quiz/quiz4/quiz.php"><button class="button">Take a Quiz!</button></a>';
+      echo '<a href="quiz/quiz4/quiz.php" id="quizLink"><button class="button">Take a Quiz!</button></a>';
    }
    ?>
 </body>

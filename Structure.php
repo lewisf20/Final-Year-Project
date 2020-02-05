@@ -77,7 +77,8 @@
             A webpage could be structured like this:
          </p>
          <img src="images/structure.png" alt="" class="websiteEg">
-
+         <p class="chapterEnd">Next chapter we will go into detail about HTML elements and tags</p>
+         <a href="ElementAndTags"><button class="button">Next</button></a>
 
       </div>
 
@@ -85,7 +86,7 @@
    <?php
    if (isset($_SESSION['userid'])) {
       $user = $_SESSION['username'];
-      echo '<a href="quiz/quiz2/quiz.php"><button class="button">Take a Quiz!</button></a>';
+      echo '<a href="quiz/quiz2/quiz.php" id="quizLink"><button class="button">Take a Quiz!</button></a>';
    }
    ?>
 </body>
