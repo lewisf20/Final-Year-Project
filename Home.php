@@ -10,8 +10,8 @@ require "header.php";
         <section class="top-section">
             <header class="showcase">
                 <h1>An interactive web-based learning package for teaching HTML</h1>
-                <p class="contentP">Welcome, this has been created for a final year project at <strong>Manchester
-                        Metropolitan University</strong> where I currently study Computer Science.</p>
+                <p class="contentP">This wbsite has been created for a final year project at <strong>Manchester
+                        Metropolitan University</strong>, where I currently study Computer Science BSc.</p>
 
 
                 <h2>About me</h2>
@@ -21,12 +21,12 @@ require "header.php";
                 <a href="About.php"><button class="button">See more</button></a>
 
             </header>
+
             <div class="top-box top-box-a">
-            
                 <?php
                 if (isset($_SESSION['userid'])) {
                     $user = $_SESSION['username'];
-                    echo '<h4 class="contentP">Welcome '.$user.'</h4>';
+                    echo '<h4 class="contentP">Welcome ' . $user . '</h4>';
                 } else {
                     echo '<h4 class="contentP">Get access to special features!</h4>
                     <p class="contentP">Create an account to benefit!</p>
@@ -34,10 +34,6 @@ require "header.php";
                     <a href="signup.php" id="signup-link"><button class="button">Sign up</button></a>';
                 }
                 ?>
-
-
-
-                
             </div>
             <div class="top-box top-box-b">
 

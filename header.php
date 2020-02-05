@@ -21,17 +21,17 @@ session_start();
         <!-- Nav bar -->
         <nav class="main-nav">
             <ul>
-                <li><a href="Home.php">Home</a></li>
+                <li><a href="Home">Home</a></li>
                 <li><a href="Learn.php">Learn</a></li>
 
                 <!-- Only show playground when user is logged in -->
                 <?php
                  if (isset($_SESSION['userid'])) {
-                    echo '<li><a href="Playground.php">Playground</a></li>';
+                    echo '<li><a href="Playground">Playground</a></li>';
                  }
                 ?>
 
-                <li><a href="About.php">About</a></li>
+                <li><a href="About">About</a></li>
             </ul>
             
         </nav>

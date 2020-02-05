@@ -13,10 +13,10 @@
    <nav class="contents">
       <ul>
          <li><a href="Learn.php" id="here">What is HTML?</a></li>
-         <li><a href="Structure.php">Structure</a></li>
-         <li><a href="ElementAndTags.php">Elements & Tags</a></li>
-         <li><a href="LinksAndImages.php">Links and Images</a></li>
-         <li><a href="Attributes.php">Attributes</a></li>
+         <li><a href="Structure">Structure</a></li>
+         <li><a href="ElementAndTags">Elements & Tags</a></li>
+         <li><a href="LinksAndImages">Links and Images</a></li>
+         <li><a href="Attributes">Attributes</a></li>
       </ul>
    </nav>
 

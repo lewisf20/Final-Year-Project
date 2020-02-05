@@ -58,7 +58,7 @@ li, a, button {
 
 
 
-.header-btn:hover, .login-btn:hover {
+.header-btn:hover, .login-btn:hover, .button:hover {
     background-color: rgba(0, 136, 169, 0.75);
 }
 

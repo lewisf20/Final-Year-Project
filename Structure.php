@@ -13,10 +13,10 @@
    <nav class="contents">
       <ul>
          <li><a href="Learn.php">What is HTML?</a></li>
-         <li><a href="Structure.php" id="here">Structure</a></li>
-         <li><a href="ElementAndTags.php">Elements & Tags</a></li>
-         <li><a href="LinksAndImages.php">Links and Images</a></li>
-         <li><a href="Attributes.php">Attributes</a></li>
+         <li><a href="Structure" id="here">Structure</a></li>
+         <li><a href="ElementAndTags">Elements & Tags</a></li>
+         <li><a href="LinksAndImages">Links and Images</a></li>
+         <li><a href="Attributes">Attributes</a></li>
       </ul>
    </nav>
 
@@ -72,6 +72,7 @@
             similar to the header but the information is usually not critical.
          </p>
 
+         <h4 class="subHeadings">A general layout</h4>
          <p class="contentP">
             A webpage could be structured like this:
          </p>
