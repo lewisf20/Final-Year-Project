@@ -142,23 +142,14 @@ function clearStatusClass(element) {
 //array of questions to ask the user
 const questions = [
     {
-        question: 'What does HTML stand for?',
-        answers: [
-            { text: 'HyperText Markup Linguistic', correct: false },
-            { text: 'Hyper Marking Language', correct: false },
-            { text: 'HyperText Marko Language', correct: false },
-            { text: 'HyperText Markup Language', correct: true },
-        ]
-    },
-    {
-        question: 'What is a <p> tag',
+        question: 'What is a <p> tag?',
         answers: [
             { text: 'paragraph tag', correct: true },
             { text: 'paraframe tag', correct: false }
         ]
     },
     {
-        question: 'Which heading displays the largest text',
+        question: 'Which heading displays the largest text?',
         answers: [
             { text: '<h4>', correct: false },
             { text: '<h3>', correct: false },
@@ -167,20 +158,41 @@ const questions = [
         ]
     },
     {
-        question: 'The <head> element contains what?',
+        question: 'Which is the right way to close a <h1> tag?',
         answers: [
-            { text: 'Title of the webpage', correct: false },
-            { text: 'Metadata', correct: false },
-            { text: 'Both', correct: true }
+            
+            { text: '<h1/>', correct: false },
+            { text: '</h2>', correct: false },
+            { text: '</h1>', correct: true },
+            { text: '<h1>', correct: false },
         ]
     },
     {
-        question: 'Which is the right way to close a <h1> tag',
+        question: 'Which is the root element?',
         answers: [
-            { text: '</h1>', correct: true },
-            { text: '<h1/>', correct: false },
-            { text: '</h1/>', correct: false },
-            { text: '<h1>', correct: false },
+            
+            { text: 'body', correct: false },
+            { text: 'html', correct: true },
+            { text: 'main', correct: false },
+            { text: 'nav', correct: false },
+        ]
+    },
+    {
+        question: 'Which element represents the dominant content of the body?',
+        answers: [
+            { text: 'html', correct: false },
+            { text: 'body', correct: false },
+            { text: 'main', correct: true },
+            { text: 'nav', correct: false },
+        ]
+    },
+    {
+        question: 'Which element typically contains info about the author, copyright data, or links',
+        answers: [
+            { text: 'footer', correct: true },
+            { text: 'aside', correct: false },
+            { text: 'article', correct: false },
+            { text: 'header', correct: false },
         ]
     },
 
