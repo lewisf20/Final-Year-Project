@@ -43,10 +43,14 @@
 
       <div>
          <h2>Setup video</h2>
-         <p class="chapterEnd">Next chapter we will look at the Structure of HTML pages</p>
-         <a href="Structure"><button class="button">Next</button></a>
+
       </div>
 
+   </section>
+
+   <section class="info">
+      <p class="chapterEnd">Next chapter we will look at the Structure of HTML pages</p>
+      <a href="Structure"><button class="button">Next</button></a>
    </section>
    <?php
    if (isset($_SESSION['userid'])) {

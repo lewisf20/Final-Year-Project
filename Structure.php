@@ -72,16 +72,20 @@
             similar to the header but the information is usually not critical.
          </p>
 
-         <h4 class="subHeadings">A general layout</h4>
-         <p class="contentP">
-            A webpage could be structured like this:
-         </p>
-         <img src="images/structure.png" alt="" class="websiteEg">
-         <p class="chapterEnd">Next chapter we will go into detail about HTML elements and tags</p>
-         <a href="ElementAndTags"><button class="button">Next</button></a>
+
 
       </div>
 
+   </section>
+
+   <section class="info">
+      <h4 class="subHeadings">A general layout</h4>
+      <p class="contentP">
+         A webpage could be structured like this:
+      </p>
+      <img src="images/structure.png" alt="" class="websiteEg">
+      <p class="chapterEnd">Next chapter we will go into detail about HTML elements and tags</p>
+      <a href="ElementAndTags"><button class="button">Next</button></a>
    </section>
    <?php
    if (isset($_SESSION['userid'])) {

@@ -2,10 +2,8 @@
 .contents {
     display: flex;
     /*border: 3px solid red; /*debug*/
-    background-color: var(--btnColor);
-    opacity: 0.6;
+    background-color: royalblue;
     justify-content: center;
-    border-radius: 2.2rem;
     align-items: center;
     width: 100%;
 }
@@ -55,6 +53,10 @@
      height: 3rem;
  }
 
+ .learnImages {
+     margin: 4rem 1rem;
+ }
+/*Table styles*/
  .elementTable{
      width: 100%;
  }
@@ -111,6 +113,11 @@ code:before {
 }
 
 /* Desktop styles*/
-@media(max-width: 800px) {
-
+@media(min-width: 800px) {
+    .contentP {
+        width: 60%;
+    }
+    .learnImages {
+        max-width: 60%;
+    }
 }
