@@ -42,7 +42,7 @@
    <section class="info">
 
       <div>
-         <h1>Potential video ????</h1>
+         <h2>Setup video</h2>
          <p class="chapterEnd">Next chapter we will look at the Structure of HTML pages</p>
          <a href="Structure"><button class="button">Next</button></a>
       </div>

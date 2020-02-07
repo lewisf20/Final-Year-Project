@@ -55,6 +55,61 @@
      height: 3rem;
  }
 
+ .elementTable{
+     width: 100%;
+ }
+ .elementTable tr th{
+     color: royalblue;
+     border-bottom: 2px solid royalblue;
+     background-color: #fff;
+     padding: .4rem;
+ }
+
+ .elementTable tr td {
+     padding: .6rem;
+ }
+
+ .elementTable tr td:first-child {
+     background-color: #fff;
+     color: royalblue;
+     font-weight: bold;
+     text-align: center;
+ }
+
+ .elementTable tr {
+     background-color: royalblue;
+     color: #fff;
+ }
+
+/* pre and code styles for exercies*/
+pre {
+    font-family: monospace;
+    background-color: #fff;
+    width: 85%;
+    margin: 2rem auto;
+    padding: 0.5rem;
+    border-radius: .2rem;
+    line-height: 0;
+    counter-reset: line;
+}
+code {
+    display:block;
+    line-height: 1.5rem;
+}
+
+code:nth-child(2n) {
+    background-color: aliceblue;
+}
+
+code:before {
+    counter-increment: line;
+    content: counter(line);
+    display: inline-block;
+    padding: 0 .5rem;
+    margin-right: .5rem;
+    color: #888
+}
+
 /* Desktop styles*/
 @media(max-width: 800px) {
 
