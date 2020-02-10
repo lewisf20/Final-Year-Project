@@ -15,8 +15,6 @@
 ?>
 
 <body>
-    <!--header start-->
-
 
     <div id="questionCounter">1</div>
     <div class="container">
