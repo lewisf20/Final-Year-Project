@@ -1,6 +1,4 @@
-        
-    <body>
-        <!--Footer-->
+    <!--Footer-->
     <footer id="contact">
         <input type="text" class="searchInput" placeholder="email...">
         <input type="text" class="searchInput" placeholder="message">
@@ -10,4 +8,5 @@
         </div>
 
     </footer>
+
 </html>

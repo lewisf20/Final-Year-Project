@@ -17,51 +17,45 @@ session_start();
 </head>
 <!--header start-->
 <header class="mainHead">
-        <img src="images/logo.png" alt="logo" class="logo"/>
-        <!-- Nav bar -->
-        <nav class="main-nav">
-            <ul>
-                <li><a href="Home">Home</a></li>
-                <li><a href="Learn.php">Learn</a></li>
+    <img src="images/logo.png" alt="logo" class="logo" />
+    <!-- Nav bar -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="Home">Home</a></li>
+            <li><a href="Learn.php">Learn</a></li>
 
-                <!-- Only show playground when user is logged in -->
-                <?php
-                 if (isset($_SESSION['userid'])) {
-                    echo '<li><a href="Playground">Playground</a></li>';
-                 }
-                ?>
+            <!-- Only show playground when user is logged in -->
+            <?php
+            if (isset($_SESSION['userid'])) {
+                echo '<li><a href="Playground">Playground</a></li>';
+            }
+            ?>
 
-                <li><a href="About">About</a></li>
-            </ul>
-            
-        </nav>
+            <li><a href="About">About</a></li>
+        </ul>
 
-        <div class="header-login">
-                <?php
+    </nav>
 
-                //Depending on if user is logged in or not
-                //display logout/sign in things
-                if (isset($_SESSION['userid'])) {
-                    $user = $_SESSION['username'];
-                    echo '<div class="login-form"><form action="php-actions/logout.pActions.php">
-                    <p id="user">'.$user.'</p>
+    <div class="header-login">
+        <?php
+
+        //Depending on if user is logged in or not
+        //display logout/sign in things
+        if (isset($_SESSION['userid'])) {
+            $user = $_SESSION['username'];
+            echo '<div class="login-form"><form action="php-actions/logout.pActions.php">
+                    <a href="Profile"><p id="user">' . $user . '</p></a>
                      <button class="header-btn" type="submit" name="logout-submit">Logout</button>
                     </form></div>';
-                } else {
-                    echo '<div class="login-form"><form action="php-actions/login.pActions.php" method="post">
+        } else {
+            echo '<div class="login-form"><form action="php-actions/login.pActions.php" method="post">
                     <input class="input" type="text" name="emailuser" placeholder="Email / Username">
                     <input class="input" type="password"  name="passw" placeholder="Password">
                     <button class="login-btn" type="submit" name="login-submit">Login</button>
                     </form></div>';
-                }
-                ?>
-        </div>
+        }
+        ?>
+    </div>
 
 
-    </header>
-
-<body>
-    
-    
-
-  
+</header>

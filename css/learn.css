@@ -112,6 +112,13 @@ code:before {
     color: #888
 }
 
+/* Profile page*/
+
+/* Content styling*/
+.profileInfo {
+    font-size: 2rem;
+}
+
 /* Desktop styles*/
 @media(min-width: 800px) {
     .contentP {
