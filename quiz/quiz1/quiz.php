@@ -3,29 +3,20 @@
 
 <head>
     <link href="quizStyles.css" rel="stylesheet">
-    <link href="header-footer.css" rel="stylesheet">
+    <link href="../../css/header-footer.css" rel="stylesheet">
     <script defer src="quizScript.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz 1</title>
 </head>
 
-
+<?php 
+    require "../../header.php";
+?>
 
 <body>
     <!--header start-->
-    <header>
-        <img src="../../images/logo.png" alt="logo" class="logo" />
-        <!-- Nav bar -->
-        <nav class="main-nav">
-            <ul>
-                <li><a href="../../Home.php">Home</a></li>
-                <li><a href="../../Learn.php">Learn</a></li>
-                <li><a href="../../About.php">About</a></li>
-            </ul>
 
-        </nav>
-    </header>
 
     <div id="questionCounter">1</div>
     <div class="container">
@@ -45,7 +36,22 @@
             <button id="nextBtn" class="nextBtn btn hide">Next</button>
         </div>
     </div>
-    <button id="correctAnswers" class="hide"></button>
+
+    <!-- Sends the users scores to the scores database...-->
+    <form action="../../php-actions/updatescores.pActions.php" method="post">
+        <button type="submit " id="correctAnswers" name="update-scores" class="hide button"></button>
+        <input type="text" name="quiz" value="quiz1" class="hide">
+        <input type="text" name="score" id="correctAnswers" class="hide">
+        <?php
+            
+            if (isset($_SESSION['userid'])) {
+                $user = $_SESSION['username'];
+                echo '<input type="text" name="user" value="'.$user.'" class="hide">';
+            }
+        ?>
+        
+    </form>
+
 </body>
 
 </html>

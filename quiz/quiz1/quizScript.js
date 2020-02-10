@@ -111,12 +111,11 @@ function selectAnswer(e) {
         questionsCorrect.innerText = "Correct Answers: " + correctAns + "/" + questions.length;
         questionsCorrect.classList.remove('hide');
         //Set value of questions correct to use in php
-        questionsCorrect.setAttribute("value", correctAns)
+        questionsCorrect.setAttribute("value", correctAns);
         
         
         correctAns = 0;
         qCount = 1;
-        beginBtn.classList.remove('hide')
     }
 }
 

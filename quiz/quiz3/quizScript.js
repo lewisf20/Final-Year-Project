@@ -116,7 +116,6 @@ function selectAnswer(e) {
         
         correctAns = 0;
         qCount = 1;
-        beginBtn.classList.remove('hide')
     }
 }
 

@@ -45,7 +45,20 @@
             <button id="nextBtn" class="nextBtn btn hide">Next</button>
         </div>
     </div>
-    <button id="correctAnswers" class="hide"></button>
+    <!-- Sends the users scores to the scores database...-->
+    <form action="../../php-actions/updatescores.pActions.php" method="post">
+        <button type="submit " id="correctAnswers" name="update-scores" class="hide button"></button>
+        <input type="text" name="quiz" value="quiz2" class="hide">
+        <input type="text" name="score" id="correctAnswers" class="hide">
+        <?php
+
+        if (isset($_SESSION['userid'])) {
+            $user = $_SESSION['username'];
+            echo '<input type="text" name="user" value="' . $user . '" class="hide">';
+        }
+        ?>
+
+    </form>
 </body>
 
 </html>
