@@ -38,16 +38,12 @@ require "header.php";
 
                 // //Contact database and retrieve scores
                 // //SELECT quiz1, quiz2, quiz3, quiz4, quiz5 FROM scores WHERE username = $user
-                $sql = "SELECT quiz1, quiz2, quiz3, quiz4, quiz5 FROM scores WHERE username = " . $user . "";
-                $row = [0, 0, 0, 0, 0];
+                $sql = "SELECT quiz1, quiz2, quiz3, quiz4, quiz5 FROM scores WHERE username = '" . $user . "'";
+                
 
                 $result = mysqli_query($conn, $sql);
-
-                //If user hasnt attempted quizes result will be empty
-                //if its not empty then extract the row
-                if ($result != "") {
-                    $row = mysqli_fetch_array($result);
-                }
+                $row = mysqli_fetch_array($result);
+                mysqli_close($conn);
 
 
                 //Get results from each column in the row
@@ -75,6 +71,7 @@ require "header.php";
                         <td>' . $quiz5Val . '</td>
                     </tr>
                 </table>';
+                
             }
             ?>
 
