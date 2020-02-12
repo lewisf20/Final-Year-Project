@@ -38,30 +38,46 @@ require "header.php";
 
                 // //Contact database and retrieve scores
                 // //SELECT quiz1, quiz2, quiz3, quiz4, quiz5 FROM scores WHERE username = $user
-                $sql = "SELECT quiz1, quiz2, quiz3, quiz4, quiz5 FROM scores WHERE username = ".$user."";
-                
+                $sql = "SELECT quiz1, quiz2, quiz3, quiz4, quiz5 FROM scores WHERE username = " . $user . "";
+                $row = [0, 0, 0, 0, 0];
 
-                $result = mysqli_query($conn, $sql );
-                $row = mysqli_fetch_array($result);
-                
-                //Get results from each column
+                $result = mysqli_query($conn, $sql);
+
+                //If user hasnt attempted quizes result will be empty
+                //if its not empty then extract the row
+                if ($result != "") {
+                    $row = mysqli_fetch_array($result);
+                }
+
+
+                //Get results from each column in the row
                 $quiz1Val = $row[0];
                 $quiz2Val = $row[1];
                 $quiz3Val = $row[2];
                 $quiz4Val = $row[3];
                 $quiz5Val = $row[4];
-                
-
-                echo '<p>'.$quiz2Val.'</p>';
 
 
-
-
-
-
-
+                echo '            
+                <table class="elementTable">
+                    <tr>
+                        <th>Quiz 1</th>
+                        <th>Quiz 2</th>
+                        <th>Quiz 3</th>
+                        <th>Quiz 4</th>
+                        <th>Quiz 5</th>
+                    </tr>
+                    <tr>
+                        <td style="background-color: royalblue; color: #fff; font-weight: normal;">' . $quiz1Val . '</td>
+                        <td>' . $quiz2Val . '</td>
+                        <td>' . $quiz3Val . '</td>
+                        <td>' . $quiz4Val . '</td>
+                        <td>' . $quiz5Val . '</td>
+                    </tr>
+                </table>';
             }
             ?>
+
 
         </div>
 
