@@ -17,7 +17,7 @@ require "header.php";
                 echo '<h2>' . $user . '\'s Profile</h2>';
                 echo '<p class="profileInfo">Email : ' . $useremail . '</p>';
                 echo '<a href="changeemail.php"><button class="button">Change email</button></a>';
-                echo '<button class="button">Change password</button>';
+                echo '<a href="changepass.php"><button class="button">Change password</button><a/>';
             }
             ?>
 
