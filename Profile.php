@@ -16,7 +16,7 @@ require "header.php";
                 $useremail = $_SESSION['useremail'];
                 echo '<h2>' . $user . '\'s Profile</h2>';
                 echo '<p class="profileInfo">Email : ' . $useremail . '</p>';
-                echo '<button class="button">Change email</button>';
+                echo '<a href="changeemail.php"><button class="button">Change email</button></a>';
                 echo '<button class="button">Change password</button>';
             }
             ?>
