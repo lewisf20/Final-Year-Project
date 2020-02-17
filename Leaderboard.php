@@ -34,6 +34,7 @@ require "header.php";
                             <th>Quiz 3</th>
                             <th>Quiz 4</th>
                             <th>Quiz 5</th>
+                            <th>Total</th>
                         </tr>';
 
 
@@ -47,6 +48,7 @@ require "header.php";
                     $quiz3Val = $row[3];
                     $quiz4Val = $row[4];
                     $quiz5Val = $row[5];
+                    $total = $quiz1Val + $quiz2Val + $quiz3Val + $quiz4Val + $quiz5Val;
 
 
                     echo '            
@@ -57,6 +59,7 @@ require "header.php";
                         <td>' . $quiz3Val . '</td>
                         <td>' . $quiz4Val . '</td>
                         <td>' . $quiz5Val . '</td>
+                        <td>' . $total . '</td>
                     </tr>
                     ';
                 }
