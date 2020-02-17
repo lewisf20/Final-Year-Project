@@ -39,11 +39,15 @@
       </div>
 
    </section>
-   <section class="info">
+   <section class="info" id="videoContainer">
 
-      <div>
+      <div class="video">
          <h2>Setup video</h2>
-
+         <video  width="100%" height="100%" controls>
+            <source src="videos/Setup.mp4" type="video/mp4" media="all and (max-width:480px)">
+         </video>
+         <a href="https://codepen.io/pen/"><button class="button">CodePen</button></a>
+         <a href="https://code.visualstudio.com/"><button class="button">VS-code</button></a>
       </div>
 
    </section>

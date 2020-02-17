@@ -163,6 +163,17 @@ h4 {
     box-shadow: var(--shadow);
 }
 
+#videoContainer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.video {
+    max-width: 80%;
+    margin-bottom: 8rem;
+}
+
  
 
 /* media queries*/
@@ -184,5 +195,6 @@ h4 {
     .info {
         grid-template-columns: 1fr;
     }
+
 
 }
