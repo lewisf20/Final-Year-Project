@@ -74,7 +74,7 @@ require "header.php";
                 
             }
             ?>
-
+            <a href="Leaderboard.php"><button class="button">Global Leaderboard</button></a>
 
         </div>
 
