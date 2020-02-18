@@ -141,45 +141,50 @@ function clearStatusClass(element) {
 //array of questions to ask the user
 const questions = [
     {
-        question: 'What does HTML stand for?',
+        question: 'Links and images deal with..',
         answers: [
-            { text: 'HyperText Markup Linguistic', correct: false },
-            { text: 'Hyper Marking Language', correct: false },
-            { text: 'HyperText Marko Language', correct: false },
-            { text: 'HyperText Markup Language', correct: true },
+            { text: 'paragraphs', correct: false },
+            { text: 'external sources', correct: true },
         ]
     },
     {
-        question: 'What is a <p> tag',
+        question: 'What is a <a> tag?',
         answers: [
-            { text: 'paragraph tag', correct: true },
-            { text: 'paraframe tag', correct: false }
+            { text: 'link tag', correct: true },
+            { text: 'arrow tag', correct: false }
         ]
     },
     {
-        question: 'Which heading displays the largest text',
+        question: 'What attribute within an <a> tag stores the url?',
         answers: [
-            { text: '<h4>', correct: false },
-            { text: '<h3>', correct: false },
-            { text: '<h6>', correct: false },
-            { text: '<h1>', correct: true },
+            { text: 'link', correct: false },
+            { text: 'src', correct: false },
+            { text: 'alt', correct: false },
+            { text: 'href', correct: true },
         ]
     },
     {
-        question: 'The <head> element contains what?',
+        question: 'What is href short for?',
         answers: [
-            { text: 'Title of the webpage', correct: false },
-            { text: 'Metadata', correct: false },
-            { text: 'Both', correct: true }
+            { text: 'Hyper Reference', correct: false },
+            { text: 'Have Reference', correct: false },
+            { text: 'HyperText Reference', correct: true }
         ]
     },
     {
-        question: 'Which is the right way to close a <h1> tag',
+        question: 'In the <img> tag, the src attribute specifies what?',
         answers: [
-            { text: '</h1>', correct: true },
-            { text: '<h1/>', correct: false },
-            { text: '</h1/>', correct: false },
-            { text: '<h1>', correct: false },
+            { text: 'Both', correct: true },
+            { text: 'Web address', correct: false },
+            { text: 'Local address', correct: false },
+        ]
+    },
+    {
+        question: 'In the <img> tag, the alt attribute specifies what?',
+        answers: [
+            { text: 'An altered image', correct: false },
+            { text: 'Message displayed if image does not load', correct: true },
+            { text: 'Alternate image', correct: false },
         ]
     },
 

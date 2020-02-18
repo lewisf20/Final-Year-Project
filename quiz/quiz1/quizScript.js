@@ -150,36 +150,34 @@ const questions = [
         ]
     },
     {
-        question: 'What is a <p> tag',
+        question: 'What do markup languages consist of?',
         answers: [
-            { text: 'paragraph tag', correct: true },
-            { text: 'paraframe tag', correct: false }
+            { text: 'Tags', correct: true },
+            { text: 'Marks', correct: false }
         ]
     },
     {
-        question: 'Which heading displays the largest text',
+        question: 'You can create a HTML file using notepad.',
         answers: [
-            { text: '<h4>', correct: false },
-            { text: '<h3>', correct: false },
-            { text: '<h6>', correct: false },
-            { text: '<h1>', correct: true },
+            { text: 'False', correct: false },
+            { text: 'True', correct: true }
         ]
     },
     {
-        question: 'The <head> element contains what?',
+        question: 'Tags are used to?',
         answers: [
-            { text: 'Title of the webpage', correct: false },
-            { text: 'Metadata', correct: false },
+            { text: 'Identify elements', correct: false },
+            { text: 'Structure a webpage', correct: false },
             { text: 'Both', correct: true }
         ]
     },
     {
-        question: 'Which is the right way to close a <h1> tag',
+        question: 'The browser...',
         answers: [
-            { text: '</h1>', correct: true },
-            { text: '<h1/>', correct: false },
-            { text: '</h1/>', correct: false },
-            { text: '<h1>', correct: false },
+            { text: 'displays content.', correct: true },
+            { text: 'automatically marksup your content.', correct: false },
+            { text: 'doesn\'t display content.', correct: false },
+            
         ]
     },
 

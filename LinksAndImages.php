@@ -51,10 +51,10 @@
          </pre>
          <p class="">A link is defined by the &lt;a&gt; tag.</p>
          <p class="">&lt;a&gt; takes an attribute called <strong>href</strong>.</p>
-         <p class="contentP">The href attribute is the url of where you want the link to point to.</p>
+         <p class="contentP">The href attribute is the url of where you want the link to point to. It stands for <em>HyperText Reference</em>.</p>
 
          <h2>Exercise</h2>
-         <p class="contentP" style="color: royalblue">Like the code above, make a link pointing to www.google.co.uk or your favourite website.</p>
+         <p class="contentP" style="color: royalblue">Like the code above, make a link pointing to <strong>www.google.co.uk</strong> or your favourite website.</p>
          <iframe src="https://trinket.io/embed/html/bd13f038c3?runMode=autorun" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
       </div>
@@ -68,7 +68,7 @@
       <div>
          <h2>Anatomy of an image</h2>
          <pre>
-            <code>&lt;img src=&quot;url&quot; alt=&quot;Alterate&quot; &gt;</code>
+            <code>&lt;img src=&quot;url&quot; alt=&quot;Alternate message&quot; &gt;</code>
             <code>&lt;img src=&quot;https://trinket.io/img/trinket-logo-big.png&quot;</code>
             <code>alt=&quot;trinket logo&quot; &gt;</code>
 
