@@ -25,7 +25,7 @@ require "header.php";
 
                 $result = mysqli_query($conn, $sql);
 
-                //Start of the table, the row headers
+                //Start of the table, the column headers
                 echo '<table class="elementTable">
                         <tr>
                             <th>Username</th>
@@ -64,7 +64,9 @@ require "header.php";
                     ';
                 }
 
+                //End of table
                 echo '</table>';
+
                 //close connection
                 mysqli_close($conn);
             }

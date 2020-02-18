@@ -87,8 +87,8 @@
 pre {
     font-family: monospace;
     background-color: #fff;
-    width: 85%;
-    margin: 2rem auto;
+    width: 95%;
+    max-width: 600px;
     padding: 0.5rem;
     border-radius: .2rem;
     line-height: 0;
@@ -97,6 +97,7 @@ pre {
 code {
     display:block;
     line-height: 1.5rem;
+    
 }
 
 code:nth-child(2n) {
