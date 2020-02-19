@@ -17,7 +17,7 @@ session_start();
 </head>
 <!--header start-->
 <header class="mainHead">
-    <h2>Lewis Frater</h2>
+    <h2 id="logo">HTMLewis</h2>
     <!-- Nav bar -->
     <nav class="main-nav">
         <ul>

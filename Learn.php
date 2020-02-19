@@ -4,8 +4,6 @@
    <link rel="stylesheet" href="css/learn.css">
 </head>
 
-<!-- Contents of learning chapters -->
-<!-- Hidden initially till Menu button pressed-->
 
 <body>
 
@@ -19,9 +17,6 @@
          <li><a href="Attributes">Attributes</a></li>
       </ul>
    </nav>
-
-   <!--Menu button-->
-
 
    <section class="info">
 

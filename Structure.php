@@ -4,8 +4,6 @@
    <link rel="stylesheet" href="css/learn.css">
 </head>
 
-<!-- Contents of learning chapters -->
-<!-- Hidden initially till Menu button pressed-->
 
 <body>
 
@@ -20,7 +18,6 @@
       </ul>
    </nav>
 
-   <!--Menu button-->
 
 
    <section class="info">

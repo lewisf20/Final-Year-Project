@@ -4,8 +4,6 @@
    <link rel="stylesheet" href="css/learn.css">
 </head>
 
-<!-- Contents of learning chapters -->
-<!-- Hidden initially till Menu button pressed-->
 
 <body>
 
@@ -20,23 +18,41 @@
       </ul>
    </nav>
 
-   <!--Menu button-->
-
-
    <section class="info">
 
       <div>
          <h2>Attributes</h2>
-         <p class="contentP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam laboriosam praesentium fugiat laborum voluptate voluptas modi. Nesciunt nemo optio earum blanditiis! Harum quam dicta sunt explicabo natus autem, animi aliquid odio similique nulla saepe dolor officia iure exercitationem eaque quae alias, accusantium dolorem consequatur nostrum, excepturi incidunt blanditiis itaque? Labore.</p>
+         <img src="images/attribute.svg" alt="paragraph tag with attribute color and value red" class="learnImages">
+         <p class="contentP">In HTML attributes define additional <strong>characteristics</strong> of an element. Attributes
+            are specified in the opening tag and consists of a <strong>key/value</strong> pair in the form: <strong><em>key=&quot;value&quot;</em></strong>.</p>
+
+         <p class="contentP">Attribute values are always enclosed within quotation marks, whereas the value is not.</p>
+         <p class="contentP">A useful reference for every attribute in HTML and which elements they apply to is<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes" style="color: royalblue"><strong>Mozilla Development Network</strong></a></p>
+         <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes" target="_blank"><button class="button">MDN</button></a>
+         
 
       </div>
 
+
    </section>
+
    <section class="info">
 
       <div>
-         <h2>Attributes</h2>
-         <p class="contentP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam laboriosam praesentium fugiat laborum voluptate voluptas modi. Nesciunt nemo optio earum blanditiis! Harum quam dicta sunt explicabo natus autem, animi aliquid odio similique nulla saepe dolor officia iure exercitationem eaque quae alias, accusantium dolorem consequatur nostrum, excepturi incidunt blanditiis itaque? Labore.</p>
+         <h2>Using the style attribute</h2>
+         <img src="images/attributeCSS.svg" alt="" class="learnImages">
+         <p class="contentP">The style attribute allows HTML elements to be styled. It uses 
+            CSS (<strong>Cascading Style Sheet</strong>) styling declarations to be applied to the element.
+         </p>
+         <h2>Exercise</h2>
+         <pre>
+            <code>&lt;h1 style=&quot;color: green&quot;&gt;Attributes&lt;/h1&gt;</code>
+         </pre>
+         <p class="contentP" style="color: royalblue">Add the style attribute to the h1 element below, change it to green or your favourite colour.</p>
+         <p>List of named colors in HTML</p>
+         <a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank"><button class="button">Colors</button></a>
+         <iframe src="https://trinket.io/embed/html/3972db59fd?runMode=autorun" width="100%" height="356" frameborder="0" marginwidth="0"
+             marginheight="0" allowfullscreen></iframe>
 
       </div>
 

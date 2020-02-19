@@ -87,10 +87,16 @@ input:focus {
     background-color: lightblue;
 }
 
-.logo {
-    width: 5%;
-    height: 10%;
+/* logo styling */
+#logo {
+    display: flex;
     cursor: pointer;
+    margin: 1rem;
+    transition: 1s;
+}
+#logo:hover {
+    cursor: pointer;
+    flex-grow: 0.2;
 }
 
 /* footer */

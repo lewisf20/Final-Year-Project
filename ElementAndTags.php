@@ -4,8 +4,6 @@
    <link rel="stylesheet" href="css/learn.css">
 </head>
 
-<!-- Contents of learning chapters -->
-<!-- Hidden initially till Menu button pressed-->
 
 <body>
 
@@ -19,16 +17,12 @@
          <li><a href="Attributes">Attributes</a></li>
       </ul>
    </nav>
-
-   <!--Menu button-->
-
-
    <section class="info">
 
       <div>
          <h2>Element and Tags</h2>
 
-         <img src="images/Element.svg" alt="Showing a html element and its tags">
+         <img src="images/Element.svg" alt="Showing a html element and its tags" class="learnImages">
          <h4 class="subHeadings">Dissection of an HTML element</h4>
 
          <ol>
