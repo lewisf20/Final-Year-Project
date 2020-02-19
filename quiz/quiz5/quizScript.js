@@ -141,45 +141,35 @@ function clearStatusClass(element) {
 //array of questions to ask the user
 const questions = [
     {
-        question: 'What does HTML stand for?',
+        question: 'What do HTML attributes define?',
         answers: [
-            { text: 'HyperText Markup Linguistic', correct: false },
-            { text: 'Hyper Marking Language', correct: false },
-            { text: 'HyperText Marko Language', correct: false },
-            { text: 'HyperText Markup Language', correct: true },
+            { text: 'Color of text', correct: false },
+            { text: 'Characteristics of a paragraph', correct: false },
+            { text: 'Characteristics of an element', correct: true },
+            { text: 'HTML header', correct: false },
         ]
     },
     {
-        question: 'What is a <p> tag',
+        question: 'What are attribute values always enclosed by?',
         answers: [
-            { text: 'paragraph tag', correct: true },
-            { text: 'paraframe tag', correct: false }
+            { text: 'Quotations', correct: true },
+            { text: 'Brackets', correct: false }
         ]
     },
     {
-        question: 'Which heading displays the largest text',
+        question: 'Which tag are attributes specified in?',
         answers: [
-            { text: '<h4>', correct: false },
-            { text: '<h3>', correct: false },
-            { text: '<h6>', correct: false },
-            { text: '<h1>', correct: true },
+            { text: 'Closing tag', correct: false },
+            { text: 'Opening tag', correct: true },
         ]
     },
     {
-        question: 'The <head> element contains what?',
+        question: 'What does CSS stand for?',
         answers: [
-            { text: 'Title of the webpage', correct: false },
-            { text: 'Metadata', correct: false },
-            { text: 'Both', correct: true }
-        ]
-    },
-    {
-        question: 'Which is the right way to close a <h1> tag',
-        answers: [
-            { text: '</h1>', correct: true },
-            { text: '<h1/>', correct: false },
-            { text: '</h1/>', correct: false },
-            { text: '<h1>', correct: false },
+            { text: 'Cascading Short Styles', correct: false },
+            { text: 'Cascading Sheet Styles', correct: false },
+            { text: 'Cascading Style Sheets', correct: true },
+            { text: 'Cascaded Style Shots', correct: false },
         ]
     },
 
