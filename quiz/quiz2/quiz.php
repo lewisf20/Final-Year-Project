@@ -40,6 +40,7 @@
         <button type="submit " id="correctAnswers" name="update-scores" class="hide button"></button>
         <input type="text" name="quiz" value="quiz2" class="hide">
         <input type="text" name="score" id="correctAnswers" class="hide">
+        <input type="text" name="url" value="Location: ../Structure.php" class="hide">
         <?php
 
         if (isset($_SESSION['userid'])) {

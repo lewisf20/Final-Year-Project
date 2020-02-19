@@ -7,6 +7,8 @@ if (isset($_POST['update-scores'])) {
     $username = $_POST['user'];
     $score = $_POST['update-scores'];
     $quiz = $_POST['quiz'];
+    //Receive url the user has come from
+    $url = $_POST['url'];
 
     $sql = "UPDATE scores SET ".$quiz." = ".$score." WHERE
      username = '" . $username . "';";
@@ -17,7 +19,8 @@ if (isset($_POST['update-scores'])) {
         exit();
     } else {
         mysqli_stmt_execute($stmt);
-        header("Location: ../Learn.php");
+        //send back to prev page
+        header($url);
         exit();
     }
 
