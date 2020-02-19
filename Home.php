@@ -10,7 +10,7 @@ require "header.php";
         <section class="top-section">
             <header class="showcase">
                 <h1>An interactive web-based learning package for teaching HTML</h1>
-                <p class="contentP">This wbsite has been created for a final year project at <strong>Manchester
+                <p class="contentP">This website has been created for a final year project at <strong>Manchester
                         Metropolitan University</strong>, where I currently study Computer Science BSc.</p>
 
 

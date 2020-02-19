@@ -4,10 +4,10 @@ if (isset($_POST['signup-submit'])) {
     require 'dbhandler.php';
 
     //Get parameters ## explain diff between post and get
-    $username = $_POST['uid'];
-    $email = $_POST['mail'];
-    $pass = $_POST['passw'];
-    $passrepeat = $_POST['passw-repeat'];
+    $username = $_POST['username'];
+    $email = $_POST['email'];
+    $pass = $_POST['password'];
+    $passrepeat = $_POST['password-repeat'];
 
     //Error handlers
 
@@ -74,15 +74,48 @@ if (isset($_POST['signup-submit'])) {
                     mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashedpass);
                     mysqli_stmt_execute($stmt);
 
+                    //log user in
+                    {
+                        //Use prepared statements for security
+                        $sql = "SELECT * FROM users WHERE username=?";
+                        $stmt = mysqli_stmt_init($conn);
+
+                        //if sql fails
+                        if (!mysqli_stmt_prepare($stmt, $sql)) {
+                            header("Location: ../Home.php?error=sqlerror");
+                            exit();
+                        } else {
+                            //bind and execute sql statement
+                            mysqli_stmt_bind_param($stmt, "s", $username);
+                            mysqli_stmt_execute($stmt);
+                            $result = mysqli_stmt_get_result($stmt);
+
+                            if ($row = mysqli_fetch_assoc($result)) {
+                                $passcheck = password_verify($pass, $row['userpass']);
+                                if ($passcheck == false) {
+                                    header("Location: ../Home.php?error=invalidpassword");
+                                    exit();
+                                } else if ($passcheck == true) {
+                                    session_start();
+                                    $_SESSION['userid'] = $row['userid'];
+                                    $_SESSION['username'] = $row['username'];
+                                    $_SESSION['useremail'] = $row['useremail'];
+
+                                    header("Location: ../Home.php?login=success");
+                                    
+                                }
+                            } else {
+                                header("Location: ../Home.php?error=invalidusername");
+                                exit();
+                            }
+                        }
+                    }
+
                     header("Location: ../Home.php");
-                    
                 }
             }
         }
     }
-
-
-
 
     //close off the statement and connection
     mysqli_stmt_close($stmt);
@@ -101,7 +134,7 @@ if (isset($_POST['signup-submit'])) {
     require 'dbhandler.php';
 
     //Get parameters
-    $username = $_POST['uid'];
+    $username = $_POST['username'];
 
     //new statement to insert user into scores database
     $sql = "INSERT INTO scores (username) VALUES ('" . $username . "')";
@@ -120,9 +153,4 @@ if (isset($_POST['signup-submit'])) {
     //close off the statement and connection
     mysqli_stmt_close($stmt);
     mysqli_close($conn);
-}
-//accessed without permission
-else {
-    header("Location: ../signup.php");
-    exit();
 }

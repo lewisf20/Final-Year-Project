@@ -36,8 +36,8 @@ require "header.php";
                 $user = $_SESSION['username'];
                 echo '<h2>' . $user . '\'s Quiz Scores</h2>';
 
-                // //Contact database and retrieve scores
-                // //SELECT quiz1, quiz2, quiz3, quiz4, quiz5 FROM scores WHERE username = $user
+                //Contact database and retrieve scores
+                //SELECT quiz1, quiz2, quiz3, quiz4, quiz5 FROM scores WHERE username = $user
                 $sql = "SELECT quiz1, quiz2, quiz3, quiz4, quiz5 FROM scores WHERE username = '" . $user . "'";
                 
 

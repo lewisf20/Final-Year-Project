@@ -142,10 +142,19 @@ h4 {
 /* ################################################# */
 /* sign in/up css */
 
+.signInContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .sign-in-up {
     background: var(--primary);
     box-shadow: var(--shadow);
+    flex: 1;
     display: grid;
+    max-width: 800px;
+    max-height: 800px;
     grid-gap: 30px;
     grid-template-rows: repeat(2, 1fr);
     padding: 2rem;
