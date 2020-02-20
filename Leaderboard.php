@@ -4,6 +4,7 @@ require "header.php";
 
 <head>
     <link rel="stylesheet" href="css/learn.css">
+    <script src="js/sortTable.js"></script>
 </head>
 
 <body>
@@ -11,6 +12,7 @@ require "header.php";
 
         <div>
             <!-- Inline php to get quiz scores for user from db -->
+            <button class="button" onclick="sortTableByTotal()">Sort by Total</button>
             <?php
             if (isset($_SESSION['userid'])) {
                 require 'php-actions/dbhandler.php';
@@ -26,7 +28,7 @@ require "header.php";
                 $result = mysqli_query($conn, $sql);
 
                 //Start of the table, the column headers
-                echo '<table class="elementTable">
+                echo '<table id="globalTable" class="elementTable">
                         <tr>
                             <th>Username</th>
                             <th>Quiz 1</th>
@@ -78,6 +80,8 @@ require "header.php";
     </section>
 
 </body>
+
+
 
 
 <?php
