@@ -9,7 +9,7 @@
             <input type="text" name="email" placeholder="Email">
             <input type="password" name="password" placeholder="Password">
             <input type="password" name="password-repeat" placeholder="Repeat Password">
-            <button type="submit" name="signup-submit" class="button">Sign up</button>
+            <button type="submit" name="signup" class="button">Sign up</button>
         </form>
 
 

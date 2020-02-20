@@ -1,6 +1,6 @@
 <?php
 
-if (isset($_POST['signup-submit'])) {
+if (isset($_POST['signup'])) {
     require 'dbhandler.php';
 
     //Get parameters ## explain diff between post and get

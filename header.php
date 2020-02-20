@@ -51,7 +51,7 @@ session_start();
             echo '<div class="login-form"><form action="php-actions/login.pActions.php" method="post">
                     <input class="input" type="text" name="emailuser" placeholder="Email / Username">
                     <input class="input" type="password"  name="passw" placeholder="Password">
-                    <button class="login-btn" type="submit" name="login-submit">Login</button>
+                    <button class="login-btn" type="submit" name="login">Login</button>
                     </form></div>';
         }
         ?>

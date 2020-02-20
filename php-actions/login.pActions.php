@@ -1,6 +1,6 @@
 <?php
 
-if(isset($_POST['login-submit']))
+if(isset($_POST['login']))
 {
     require 'dbhandler.php';
 
@@ -33,8 +33,8 @@ if(isset($_POST['login-submit']))
 
             if($row = mysqli_fetch_assoc($result))
             {
-                $passcheck = password_verify($pass, $row['userpass']);
-                if($passcheck == false)
+                $checkPassword = password_verify($pass, $row['userpass']);
+                if($checkPassword == false)
                 {
                     header("Location: ../Home.php?error=invalidpassword");
                     exit();
