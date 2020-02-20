@@ -12,14 +12,15 @@ require "header.php";
 
         <div>
             <!-- Inline php to get quiz scores for user from db -->
-            <button class="button" onclick="sortTableByTotal()">Sort by Total</button>
+            
             <?php
             if (isset($_SESSION['userid'])) {
                 require 'php-actions/dbhandler.php';
 
 
 
-                echo '<h2>Global Leaderboard</h2>';
+                echo '<h2>Global Leaderboard</h2>
+                <button class="button" onclick="sortTableByTotal()">Sort by Total</button>';
 
                 // //Contact database and retrieve all users scores
                 $sql = "SELECT * FROM scores";

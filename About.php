@@ -126,6 +126,11 @@
                     <li>Football</li>
                 </ul>
             </section>
+            <section class="sectionAbout">
+                <h2>Contact Details</h2>
+                <p class="contentP">Email = 17081955@stu.mmu.ac.uk</p>
+                
+            </section>
         </article>
 
     </main>

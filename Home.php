@@ -63,12 +63,12 @@ require "header.php";
 
         <!--Dressing images-->
         <section class="dressing">
-            <img src="https://source.unsplash.com/random/200x200" alt="">
-            <img src="https://source.unsplash.com/random/201x200" alt="">
-            <img src="https://source.unsplash.com/random/202x200" alt="">
-            <img src="https://source.unsplash.com/random/203x200" alt="">
-            <img src="https://source.unsplash.com/random/204x200" alt="">
-            <img src="https://source.unsplash.com/random/205x200" alt="">
+            <img src="https://source.unsplash.com/random/200x200" alt="random image">
+            <img src="https://source.unsplash.com/random/201x200" alt="random image">
+            <img src="https://source.unsplash.com/random/202x200" alt="random image">
+            <img src="https://source.unsplash.com/random/203x200" alt="random image">
+            <img src="https://source.unsplash.com/random/204x200" alt="random image">
+            <img src="https://source.unsplash.com/random/205x200" alt="random image">
         </section>
 
 

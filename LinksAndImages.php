@@ -86,7 +86,7 @@
    </section>
 
    <section class="info">
-      <p class="chapterEnd">Next chapter we will go into detail about HTML Attributes</p>
+      <p class="chapterEnd">Next chapter we will go into detail about HTML Attributes.</p>
       <a href="Attributes"><button class="button">Next</button></a>
    </section>
    <?php

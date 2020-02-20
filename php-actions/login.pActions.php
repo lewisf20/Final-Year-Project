@@ -39,7 +39,7 @@ if(isset($_POST['login']))
                     header("Location: ../Home.php?error=invalidpassword");
                     exit();
                 }
-                else if($passcheck == true)
+                else if($checkPassword == true)
                 {
                     session_start();
                     $_SESSION['userid'] = $row['userid'];
